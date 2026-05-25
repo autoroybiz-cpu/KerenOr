@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>מדיניות פרטיות ותנאי שימוש | קרן של אור</title>
+  <meta name="description" content="מדיניות פרטיות ותנאי שימוש של האתר קרן של אור — טיפול אישי וזוגי." />
+  <meta name="robots" content="noindex" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --cream:      #FAF8F3;
+      --cream-alt:  #F0EBE0;
+      --cream-deep: #E8E0D0;
+      --olive:      #6B7B5A;
+      --olive-dark: #526047;
+      --gold:       #B8956A;
+      --text-dark:  #2E2A24;
+      --text-mid:   #5A5448;
+      --text-soft:  #8A8278;
+      --white:      #FFFFFF;
+      --font:       'Heebo', 'Arial Hebrew', Arial, sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 16px; scroll-behavior: smooth; }
+    body {
+      font-family: var(--font); background: var(--cream);
+      color: var(--text-dark); direction: rtl;
+      line-height: 1.75; -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--olive); text-decoration: underline; text-underline-offset: 3px; }
+    a:hover { color: var(--olive-dark); }
+
+    /* --- HEADER --- */
+    .site-header {
+      background: var(--white);
+      border-bottom: 1px solid var(--cream-deep);
+      padding: 18px 0;
+    }
+    .header-inner {
+      max-width: 860px; margin: 0 auto; padding: 0 28px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .site-logo {
+      font-size: 1.15rem; font-weight: 800; color: var(--olive-dark);
+      text-decoration: none; letter-spacing: -0.01em;
+    }
+    .site-logo:hover { color: var(--olive); }
+    .back-link {
+      font-size: 0.88rem; font-weight: 600; color: var(--text-soft);
+      text-decoration: none; display: flex; align-items: center; gap: 6px;
+      transition: color 0.2s;
+    }
+    .back-link:hover { color: var(--olive); }
+
+    /* --- LAYOUT --- */
+    .page-wrap {
+      max-width: 860px; margin: 0 auto;
+      padding: 56px 28px 80px;
+    }
+
+    /* --- HERO --- */
+    .doc-hero {
+      background: linear-gradient(145deg, var(--cream-alt), var(--cream-deep));
+      border-radius: 20px; padding: 44px 44px 40px;
+      margin-bottom: 56px;
+      border: 1px solid var(--cream-deep);
+    }
+    .doc-eyebrow {
+      font-size: 0.75rem; font-weight: 700; color: var(--gold);
+      letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 10px;
+    }
+    .doc-title {
+      font-size: clamp(1.6rem, 3vw, 2.1rem); font-weight: 800;
+      color: var(--text-dark); margin-bottom: 16px; line-height: 1.2;
+    }
+    .doc-meta {
+      font-size: 0.85rem; color: var(--text-soft);
+      display: flex; flex-wrap: wrap; gap: 20px;
+    }
+    .doc-meta span { display: flex; align-items: center; gap: 6px; }
+
+    /* --- SECTIONS --- */
+    .doc-section { margin-bottom: 52px; }
+    .doc-section h2 {
+      font-size: 1.25rem; font-weight: 700; color: var(--olive-dark);
+      margin-bottom: 18px; padding-bottom: 10px;
+      border-bottom: 2px solid var(--cream-deep);
+    }
+    .doc-section h3 {
+      font-size: 1rem; font-weight: 700; color: var(--text-dark);
+      margin: 22px 0 10px;
+    }
+    .doc-section p {
+      font-size: 0.97rem; color: var(--text-mid);
+      margin-bottom: 14px; line-height: 1.8;
+    }
+    .doc-section p:last-child { margin-bottom: 0; }
+    .doc-section ul, .doc-section ol {
+      margin: 10px 0 14px 0; padding-right: 22px;
+    }
+    .doc-section li {
+      font-size: 0.97rem; color: var(--text-mid);
+      margin-bottom: 8px; line-height: 1.75;
+    }
+    .doc-section strong { color: var(--text-dark); font-weight: 600; }
+
+    /* --- HIGHLIGHT BOX --- */
+    .info-box {
+      background: var(--white); border-right: 3px solid var(--gold);
+      border-radius: 12px; padding: 20px 22px;
+      margin: 18px 0; border: 1px solid var(--cream-deep);
+      border-right: 3px solid var(--gold);
+    }
+    .info-box p { margin-bottom: 0; }
+
+    .warn-box {
+      background: rgba(192,87,58,0.05);
+      border-right: 3px solid #C0573A;
+      border-radius: 12px; padding: 18px 22px;
+      margin: 18px 0;
+    }
+    .warn-box p { color: #8A3A22; margin-bottom: 0; }
+
+    /* --- TOC --- */
+    .toc {
+      background: var(--white); border-radius: 16px; padding: 28px 28px;
+      margin-bottom: 48px; border: 1px solid var(--cream-deep);
+      box-shadow: 0 2px 12px rgba(80,72,60,0.07);
+    }
+    .toc h2 {
+      font-size: 0.9rem; font-weight: 700; color: var(--text-soft);
+      letter-spacing: 0.1em; text-transform: uppercase;
+      margin-bottom: 16px; border: none; padding: 0;
+    }
+    .toc ol { padding-right: 18px; }
+    .toc li { margin-bottom: 8px; }
+    .toc a {
+      font-size: 0.92rem; font-weight: 500; color: var(--olive);
+      text-decoration: none;
+    }
+    .toc a:hover { text-decoration: underline; }
+
+    /* --- DIVIDER --- */
+    .doc-divider {
+      border: none; border-top: 1px solid var(--cream-deep);
+      margin: 48px 0;
+    }
+
+    /* --- CONTACT BOX --- */
+    .contact-box {
+      background: linear-gradient(145deg, var(--olive-dark), #435340);
+      border-radius: 20px; padding: 36px 36px;
+      color: white; text-align: center; margin-top: 56px;
+    }
+    .contact-box h2 { color: white; margin-bottom: 12px; font-size: 1.2rem; }
+    .contact-box p  { color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 20px; }
+    .contact-box a  {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: white; color: var(--olive-dark);
+      padding: 12px 28px; border-radius: 50px;
+      font-size: 0.95rem; font-weight: 700;
+      text-decoration: none; transition: all 0.2s;
+    }
+    .contact-box a:hover { background: var(--cream); transform: translateY(-1px); }
+
+    /* --- FOOTER --- */
+    .page-footer {
+      background: #2E2A24; padding: 28px 0; text-align: center;
+    }
+    .page-footer p {
+      font-size: 0.8rem; color: rgba(250,248,243,0.4);
+      margin-bottom: 6px;
+    }
+    .page-footer a { color: rgba(250,248,243,0.55); font-size: 0.8rem; }
+
+    /* --- RESPONSIVE --- */
+    @media (max-width: 600px) {
+      .page-wrap   { padding: 36px 18px 60px; }
+      .doc-hero    { padding: 28px 22px; }
+      .toc         { padding: 22px 20px; }
+      .contact-box { padding: 28px 20px; }
+      .doc-section h2 { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">קרן של אור</a>
+      <a href="index.html" class="back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+        חזרה לאתר
+      </a>
+    </div>
+  </header>
+
+  <main class="page-wrap" role="main">
+
+    <!-- HERO -->
+    <div class="doc-hero">
+      <p class="doc-eyebrow">מסמך משפטי</p>
+      <h1 class="doc-title">מדיניות פרטיות ותנאי שימוש</h1>
+      <div class="doc-meta">
+        <span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          עדכון אחרון: מאי 2025
+        </span>
+        <span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          מדינת ישראל
+        </span>
+      </div>
+    </div>
+
+    <!-- TABLE OF CONTENTS -->
+    <nav class="toc" aria-label="תוכן עניינים">
+      <h2>תוכן עניינים</h2>
+      <ol>
+        <li><a href="#general">כללי ומבוא</a></li>
+        <li><a href="#data-collected">מידע הנאסף</a></li>
+        <li><a href="#data-use">שימוש במידע</a></li>
+        <li><a href="#data-security">אבטחת מידע</a></li>
+        <li><a href="#user-rights">זכויות המשתמש</a></li>
+        <li><a href="#cookies">עוגיות (Cookies)</a></li>
+        <li><a href="#third-parties">צדדים שלישיים</a></li>
+        <li><a href="#terms">תנאי שימוש באתר</a></li>
+        <li><a href="#disclaimer">כתב ויתור</a></li>
+        <li><a href="#changes">שינויים במדיניות</a></li>
+        <li><a href="#contact">יצירת קשר</a></li>
+      </ol>
+    </nav>
+
+    <!-- SECTION 1 -->
+    <section class="doc-section" id="general">
+      <h2>1. כללי ומבוא</h2>
+      <p>ברוכים הבאים לאתר <strong>קרן של אור</strong> (להלן: "האתר"). האתר מופעל על ידי <strong>קרן</strong>, מטפלת אישית וזוגית (להלן: "בעלת האתר").</p>
+      <p>מסמך זה מסדיר את מדיניות הפרטיות ואת תנאי השימוש באתר. השימוש באתר מהווה הסכמה לתנאים המפורטים להלן. אם אינכם מסכימים לתנאים אלו, נבקשכם להימנע מהשימוש באתר.</p>
+      <p>מסמך זה נכתב בהתאם להוראות <strong>חוק הגנת הפרטיות, התשמ"א-1981</strong> ותקנותיו, וכן בהתאם להנחיות <strong>רשות הגנת הפרטיות</strong> בישראל.</p>
+      <div class="info-box">
+        <p>האתר משמש לצורך יצירת קשר ראשוני עם בעלת האתר לצורך ייעוץ טיפולי. האתר אינו מספק טיפול רפואי, פסיכיאטרי או שירות חירום.</p>
+      </div>
+    </section>
+
+    <hr class="doc-divider" />
+
+    <!-- SECTION 2 -->
+    <section class="doc-section" id="data-collected">
+      <h2>2. מידע הנאסף</h2>
+      <p>האתר עשוי לאסוף את סוגי המידע הבאים:</p>
+
+      <h3>מידע שמסרתם מרצונכם (דרך הטופס)</h3>
+      <ul>
+        <li><strong>שם מלא</strong> — לצורך זיהוי ופנייה אישית</li>
+        <li><strong>מספר טלפון</strong> — לצורך חזרת בעלת האתר ליצירת קשר</li>
+        <li><strong>תוכן הפנייה</strong> — תיאור רצון השינוי או הצורך שמסרתם בטופס</li>
+      </ul>
+
+      <h3>מידע הנאסף אוטומטית</h3>
+      <ul>
+        <li>כתובת IP, סוג הדפדפן וסוג המכשיר</li>
+        <li>עמודים שנצפו ומשך הביקור באתר</li>
+        <li>מדינה ואזור גיאוגרפי כללי (ברמת מדינה/עיר)</li>
+      </ul>
+      <p>מידע זה נאסף באמצעות כלי ניתוח אנונימיים ואינו מקושר לזהותכם האישית.</p>
+    </section>
+
+    <hr class="doc-divider" />
+
+    <!-- SECTION 3 -->
+    <section class="doc-section" id="data-use">
+      <h2>3. שימוש במידע</h2>
+      <p>המידע שנאסף ישמש אך ורק לצרכים הבאים:</p>
+      <ul>
+        <li>חזרה אליכם בעקבות פנייתכם לשיחת היכרות</li>
+        <li>שיפור חוויית השימוש באתר</li>
+        <li>שיפור תוכן האתר ורלוונטיות המידע המוצג</li>
+      </ul>
+      <p>בעלת האתר <strong>לא תמכור, לא תשכיר ולא תעביר</strong> את פרטיכם לצדדים שלישיים לצורכי שיווק, ללא הסכמתכם המפורשת.</p>
+      <div class="info-box">
+        <p>הנתונים מהטופס מועברים בצורה מאובטחת לשירות Make (Integromat) לצורך ניהול פנימי ומעקב אחר פניות. ראו סעיף צדדים שלישיים.</p>
+      </div>
+    </section>
+
+    <hr class="doc-divider" />
+
+    <!-- SECTION 4 -->
+    <section class="doc-section" id="data-security">
+      <h2>4. אבטחת מידע</h2>
+      <p>בעלת האתר נוקטת אמצעים סבירים לאבטחת המידע שנמסר, לרבות:</p>
+      <ul>
+        <li>העברת נתונים מוצפנת באמצעות פרוטוקול HTTPS/SSL</li>
+        <li>שמירת פרטי הלקוחות במערכות מאובטחות עם גישה מוגבלת</li>
+        <li>אי-שמירת פרטי אשראי או מידע רגיש נוסף</li>
+      </ul>
+      <p>יחד עם זאת, אין אפשרות לאבטחה מוחלטת בסביבת האינטרנט, ובעלת האתר אינה אחראית לכל פרצת אבטחה שאינה בשליטתה הישירה.</p>
+      <p><strong>תקופת שמירת המידע:</strong> פרטי פנייה יישמרו למשך שנה אחת מיום קבלתם, ולאחר מכן יימחקו באופן מוחלט, אלא אם קיים צורך תפעולי מוצדק בהמשך שמירתם.</p>
+    </section>
+
+    <hr class="doc-divider" />
+
+    <!-- SECTION 5 -->
+    <section class="doc-section" id="user-rights">
+      <h2>5. זכויות המשתמש</h2>
+      <p>בהתאם לחוק הגנת הפרטיות, התשמ"א-1981, עומדות לכם הזכויות הבאות:</p>
+      <ul>
+        <li><strong>זכות עיון:</strong> לבקש לראות את המידע שנשמר אודותיכם</li>
+        <li><strong>זכות תיקון:</strong> לבקש תיקון מידע שגוי או לא מדויק</li>
+        <li><strong>זכות מחיקה:</strong> לבקש מחיקת המידע שלכם ממאגרי הנתונים</li>
+        <li><strong>זכות התנגדות:</strong> להתנגד לעיבוד המידע שלכם לצרכים מסוימים</li>
+      </ul>
+      <p>לממוש זכויות אלו, פנו אלינו בדוא"ל או בוואטסאפ כמפורט בסעיף "יצירת קשר". נטפל בפנייתכם תוך 30 יום.</p>
+    </section>
+
+    <hr class="doc-divider" />
+
+    <!-- SECTION 6 -->
+    <section class="doc-section" id="cookies">
+      <h2>6. עוגיות (Cookies)</h2>
+      <p>האתר עשוי לעשות שימוש בעוגיות (Cookies) — קבצים קטנים הנשמרים על מכשירכם — לצרכים הבאים:</p>
+      <ul>
+        <li><strong>עוגיות הכרחיות:</strong> לתפקוד תקין של האתר</li>
+        <li><strong>עוגיות ניתוח:</strong> לניתוח אנונימי של תנועה לשיפור האתר (Google Analytics, אם מוטמע)</li>
+      </ul>
+      <p>ניתן לחסום או למחוק עוגיות דרך הגדרות הדפדפן שלכם. חסימת עוגיות עשויה לפגוע בחוויית השימוש.</p>
+      <p>האתר אינו עושה שימוש בעוגיות שיווקיות, רימרקטינג, או מעקב בין-אתרי.</p>
+    </section>
+
+    <hr class="doc-divider" />
+
+    <!-- SECTION 7 -->
+    <section class="doc-section" id="third-parties">
+      <h2>7. צדדים שלישיים</h2>
+      <p>האתר משתמש בשירותים חיצוניים הבאים לצורך תפקודו:</p>
+
+      <h3>Make (Integromat)</h3>
+      <p>שירות אוטומציה המשמש לקבלת נתוני הטופס ולניהול פנימי. הנתונים מועברים אל Make בצורה מוצפנת. מדיניות הפרטיות של Make: <a href="https://www.make.com/en/privacy-notice" target="_blank" rel="noopener noreferrer">make.com/privacy-notice</a></p>
+
+      <h3>Google Fonts</h3>
+      <p>שירות גופנים של גוגל. בעת טעינת האתר, הדפדפן שלכם מתחבר לשרתי גוגל לטעינת גופנים. מדיניות הפרטיות של גוגל: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a></p>
+
+      <h3>WhatsApp</h3>
+      <p>כפתורי הוואטסאפ באתר מפנים לשירות WhatsApp (Meta). שימוש בהם כפוף למדיניות הפרטיות של WhatsApp/Meta.</p>
+
+      <p>בעלת האתר אינה שולטת על מדיניות הפרטיות של שירותים חיצוניים אלו ואינה אחראית להם.</p>
+    </section>
+
+    <hr class="doc-divider" />
+
+    <!-- SECTION 8 -->
+    <section class="doc-section" id="terms">
+      <h2>8. תנאי שימוש באתר</h2>
+
+      <h3>מטרת האתר</h3>
+      <p>האתר נועד אך ורק לצורך מתן מידע על שירותי הטיפול ולאפשר יצירת קשר ראשוני עם בעלת האתר לתיאום שיחת היכרות.</p>
+
+      <h3>הגבלות שימוש</h3>
+      <ul>
+        <li>אין להשתמש באתר לכל מטרה בלתי חוקית</li>
+        <li>אין להעתיק, להפיץ או לפרסם תכנים מהאתר ללא רשות בכתב</li>
+        <li>אין להשתמש בפרטי יצירת הקשר לצורכי ספאם או שיווק לא מורשה</li>
+        <li>אין לנסות לפגוע בתפקוד האתר בכל דרך שהיא</li>
+      </ul>
+
+      <h3>קניין רוחני</h3>
+      <p>כל התכנים, הטקסטים, העיצוב והמידע באתר הם רכוש בעלת האתר ומוגנים בזכויות יוצרים. אין להשתמש בהם ללא אישור מפורש בכתב.</p>
+
+      <h3>גיל המשתמש</h3>
+      <p>השימוש באתר ובשירות מיועד לבני 18 ומעלה. קטינים הזקוקים לטיפול יפנו בליווי הורה או אפוטרופוס.</p>
+    </section>
+
+    <hr class="doc-divider" />
+
+    <!-- SECTION 9 -->
+    <section class="doc-section" id="disclaimer">
+      <h2>9. כתב ויתור ואחריות</h2>
+
+      <div class="warn-box">
+        <p><strong>חשוב:</strong> האתר אינו מיועד למצבי חירום. במצב חירום רגשי, מחשבות אובדניות או סכנה מיידית — פנו מיידית לגורמי החירום: ער"ן 1201 | מד"א 101 | משטרה 100.</p>
+      </div>
+
+      <p>המידע באתר הוא כללי ומטרתו ליידע בלבד. הוא אינו מהווה ייעוץ פסיכולוגי, פסיכיאטרי, רפואי או משפטי.</p>
+      <p>בעלת האתר אינה אחראית לכל נזק, ישיר או עקיף, שיגרם כתוצאה מהסתמכות על המידע המופיע באתר.</p>
+      <p>תוצאות הטיפול משתנות מאדם לאדם ואינן מובטחות. הטיפול אינו תחליף לייעוץ פסיכיאטרי או רפואי.</p>
+    </section>
+
+    <hr class="doc-divider" />
+
+    <!-- SECTION 10 -->
+    <section class="doc-section" id="changes">
+      <h2>10. שינויים במדיניות</h2>
+      <p>בעלת האתר שומרת לעצמה את הזכות לעדכן ולשנות מדיניות זו בכל עת, ללא הודעה מוקדמת.</p>
+      <p>גרסה עדכנית תמיד תופיע בדף זה עם תאריך עדכון מעודכן בראשית המסמך. המשך השימוש באתר לאחר שינויים מהווה הסכמה לתנאים המעודכנים.</p>
+      <p>מומלץ לעיין במסמך זה מעת לעת.</p>
+    </section>
+
+    <hr class="doc-divider" />
+
+    <!-- SECTION 11 -->
+    <section class="doc-section" id="contact">
+      <h2>11. יצירת קשר בנושא פרטיות</h2>
+      <p>לכל שאלה, בקשה או פנייה בנושא הגנת פרטיות, מחיקת מידע או מימוש זכויות — אפשר לפנות אלינו:</p>
+      <ul>
+        <li><strong>אימייל:</strong> autoroybiz@gmail.com</li>
+        <li><strong>וואטסאפ:</strong> <a href="https://wa.me/972527738798" target="_blank" rel="noopener">+972 52-773-8798</a></li>
+      </ul>
+      <p>נטפל בפנייתכם בתוך 30 ימי עסקים.</p>
+      <p><strong>הדין החל:</strong> מדיניות זו כפופה לחוקי מדינת ישראל. סמכות השיפוט הבלעדית תהא לבתי המשפט המוסמכים בישראל.</p>
+    </section>
+
+    <!-- CONTACT BOX -->
+    <div class="contact-box">
+      <h2>יש לכם שאלה?</h2>
+      <p>אפשר לפנות אלינו ישירות ונשמח לענות.</p>
+      <a href="https://wa.me/972527738798?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%A7%D7%A8%D7%9F%2C%20%D7%99%D7%A9%20%D7%9C%D7%99%20%D7%A9%D7%90%D7%9C%D7%94%20%D7%91%D7%A0%D7%95%D7%92%D7%A2%20%D7%9C%D7%9E%D7%93%D7%99%D7%A0%D7%99%D7%95%D7%AA%20%D7%94%D7%A4%D7%A8%D7%98%D7%99%D7%95%D7%AA" target="_blank" rel="noopener" aria-label="פנו לקרן בוואטסאפ">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        פנו בוואטסאפ
+      </a>
+    </div>
+
+  </main>
+
+  <footer class="page-footer">
+    <p>קרן של אור &copy; 2025 — כל הזכויות שמורות</p>
+    <a href="index.html">חזרה לאתר הראשי</a>
+  </footer>
+
+</body>
+</html>
