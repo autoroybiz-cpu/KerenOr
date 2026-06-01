@@ -1070,6 +1070,41 @@ p  { font-size: 1rem; line-height: 1.75; }
   text-align: center; font-size: 1rem;
   color: rgba(255,255,255,0.55);
   font-weight: 500; font-style: italic;
+  margin-bottom: 40px;
+}
+
+.dark-cta {
+  display: flex; flex-wrap: wrap; gap: 14px;
+  justify-content: center; align-items: center;
+}
+
+.btn-dark-primary {
+  display: inline-flex; align-items: center; gap: 9px;
+  background: var(--white); color: var(--olive-dark);
+  padding: 15px 32px; border-radius: var(--r-full);
+  font-size: 1rem; font-weight: 700; font-family: var(--font);
+  border: 2px solid var(--white);
+  transition: var(--ease); cursor: pointer; white-space: nowrap;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.22);
+}
+.btn-dark-primary:hover {
+  background: var(--cream); border-color: var(--cream);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 32px rgba(0,0,0,0.28);
+}
+
+.btn-dark-wa {
+  display: inline-flex; align-items: center; gap: 9px;
+  background: transparent; color: rgba(255,255,255,0.88);
+  padding: 14px 28px; border-radius: var(--r-full);
+  font-size: 1rem; font-weight: 700; font-family: var(--font);
+  border: 2px solid rgba(255,255,255,0.3);
+  transition: var(--ease); cursor: pointer; white-space: nowrap;
+}
+.btn-dark-wa:hover {
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.6);
+  transform: translateY(-2px);
 }
 
 /* ---- Transform checklist (sub-3) ---- */
@@ -1250,7 +1285,9 @@ p  { font-size: 1rem; line-height: 1.75; }
   .contact-side { flex-direction: column; }
 
   /* Approach */
-  .approach-quote { padding: 36px 28px; }
+  .approach-quote { padding: 24px 20px; }
+  .approach-quote p { font-size: 1.35rem; }
+  .quote-mark { font-size: 4.5rem; margin-bottom: 14px; }
 
   /* Mega section mobile */
   .mega-num { font-size: 2.8rem; }
@@ -1258,6 +1295,8 @@ p  { font-size: 1rem; line-height: 1.75; }
   .mega-sub { padding: 64px 0; }
   .transform-checklist { grid-template-columns: 1fr; }
   .mega-cta .btn-hero { width: 100%; justify-content: center; }
+  .dark-cta { flex-direction: column; }
+  .btn-dark-primary, .btn-dark-wa { width: 100%; justify-content: center; }
 
   /* Float WA */
   .float-wa { bottom: 20px; left: 20px; width: 52px; height: 52px; }
